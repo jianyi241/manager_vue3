@@ -1,0 +1,26 @@
+.css {
+  background-color: #eeeeee;
+  padding-top: 60px;
+  .container {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 60px);
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 15px;
+      overflow: auto;
+      &::-webkit-scrollbar-thumb {
+        width: 8px;
+        border-radius: 4px;
+        background-color: #333333;
+      }
+      &::-webkit-scrollbar {
+        background-color: #dddddd;
+        width: 8px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
